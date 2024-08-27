@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=Student
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Student\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=r
+comment1.target=void\ setSeatX(int)
+comment10.params=
+comment10.target=void\ sitDown()
+comment11.params=
+comment11.target=void\ assignSeat()
+comment2.params=s
+comment2.target=void\ setSeatY(int)
+comment3.params=
+comment3.target=void\ getName()
+comment4.params=
+comment4.target=int\ GetSeatX()
+comment4.text=\r\n\ Plays\ a\ sound\ file\ when\ called\r\n\ @param\ String\ myNameFile\ \ is\ the\ name\ of\ the\ sound\ file\ to\ play,\ ex\ "mySound.wav",\r\n
+comment5.params=
+comment5.target=int\ GetSeatY()
+comment6.params=
+comment6.target=java.lang.String\ getFirstName()
+comment7.params=
+comment7.target=java.lang.String\ getLastName()
+comment8.params=myNameFile
+comment8.target=void\ sayName(java.lang.String)
+comment9.params=
+comment9.target=void\ returnToSeat()
+numComments=12
