@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=StudentDeskGroup
+comment0.text=\r\n\ \r\n\ This\ is\ a\ container\ for\ methods\ that\ could\ be\ called\ from\ the\ Classroom.\ \ Possible\ methods\ could\ include\ the\ following\:\r\n\ public\ void\ assignSeatsToDeskGroups();\ \ //\ iterates\ through\ all\ seats\ and\ sets\ the\ deskGroup\ based\ on\ position\ of\ each\ seat\r\n\ public\ void\ getCurrentStudents(int\ deskGroup)\ \ //\ list\ all\ students\ in\ a\ current\ deskGroup\ \ (prints\ to\ console)\r\n\ Can\ you\ think\ of\ others?\r\n\ \r\n\ methods\ should\ be\ public,\ so\ they\ can\ be\ called\ when\ the\ scenario\ is\ in\ pause\ mode.\r\n\ \r\n\ @author\ (your\ name\ (add\ your\ groups\ names\ here,\ and\ tie\ to\ any\ method\ that\ you\ add)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date.\ Update\ this\ for\ each\ revision)\r\n
+comment1.params=
+comment1.target=void\ act()
+comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ StudentDeskGroup\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+numComments=2
