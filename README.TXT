@@ -16,43 +16,49 @@ CONTRIBUTERS:               Kilgore Trout
 
 USER INSTRUCTIONS:
 
+PULL INSTRUCTIONS:
 
 1) Start git bash (assuming that you are using git bash). 
-NOTE: We will ask  for one or more class buildmasters.  Each class build-master should fork the main repo to a new repo before starting. Names below should be updated accordingly
 
-2) Move to a directory where you want to keep your work. For instance, cd c:/ then cd Users/YourName/Documents/Assignments
+2) Move to a directory where you want to keep your work. For instance, "cd c:/ then cd Users/YourName/Documents/Assignments"
+  Helpful: Use "ls" to view list of possible directory then "cd' to the next avaliable directory  
 
-3) Clone (first time, each class build-master should fork, so that each class has their own copy) the repository into the directory where git bash is pointing:
+3) Create a folder using "mkdir CSA github projects" (this just an example you can name it anything)
 
-    git clone https://github.com/DHS-CP/GreenfootSeatingChartMaster2024-25.git  (this will change based on fork created by build-master(s).
+4) Access the folder with cd
+
+5) Clone (first time, each class build-master should fork, so that each class has their own copy) the repository into the directory where git bash is pointing:
+
+    git clone https://github.com/Shreypay/CSA_6_Schick_GreenfootSeatingChartMaster2024-25.git  (this will change based on fork created by build-master(s).
 
 NOTE: This should set up all initial conditions for GIT and avoid a lot of confusion.
 
 4) Open the greenfoot project file from within greenfoot and start editing.
 
-5) Once tested and saved in Greenfoot, from the bash shell add any files that you want to put into the repository to the next git commit: (Note: File names are case sensitive!)
 
-PLEASE DO NOT COMMIT YOUR FILES IF THEY DO NOT COMPILE LOCALLY!!!!! DO NOT COMMIT TO THIS MASTER REPOSITORY! Work with your build master to create a fork with appropriate permissions! Teachers will provide the current version of the seating chart in Canvas, so that you know where you should be seated.
-=====================================================================
+PUSH INSTRUCTIONS:
+1)Navigate to Your Project Directory using "cd"
 
-git add FirstLast.java
-git add images/firstlast.jpg
-git add sounds/firstlast.wav
+2) Create a Branch
+  "git checkout -b FirstnameLastinitial"
 
-(Files are case sensitive!!!)
+3) Add Changes to the Staging Area:
+
+  After editing, add the modified files to the staging area:
+  git add.
 
 6) Check to see what has been staged (from the git command line):
 
-git status
+  git status
 
 7) Commit your changes from the git command line:
 
-git commit -m “adding my files to the repository”
+  git commit -m “adding my files to the repository”
 
 8) Push your changes to the remote repository (each period should have their own cloned or branched version to work with.
 Do not commit back to the master repo:
 
-git push
+  git push origin firstnamelastinitial
 
 
 ASSIGNMENT INSTRUCTIONS IN BRIEF
