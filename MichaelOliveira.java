@@ -41,8 +41,8 @@ public class MichaelOliveira extends Student implements SpecialInterestOrHobby
     public MichaelOliveira() {
         firstName="Michael";
         lastName="Oliveira";
-        mySeatX=1;
-        mySeatY=1;
+        mySeatX=6;
+        mySeatY=6;
        // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
