@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=SpecialInterestOrHobby
+comment0.text=\r\n\ Write\ a\ description\ of\ interface\ SpecialInterestOrHobby\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=myHobbySentence
+comment1.target=void\ myHobby(java.lang.String)
+numComments=2
