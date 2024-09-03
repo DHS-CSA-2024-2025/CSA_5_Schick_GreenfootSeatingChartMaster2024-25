@@ -7,7 +7,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @version 2.0 Aug 13, 2019
  * @version 3.0 July 21, 2020
  */
-public class NguyenTony extends Student implements SpecialInterestOrHobby
+public class TonyNguyen extends Student implements SpecialInterestOrHobby
 {
 
     /**
@@ -22,7 +22,7 @@ public class NguyenTony extends Student implements SpecialInterestOrHobby
      * @param int s (seat number within row seating arrangement)
      * 
      */
-    public NguyenTony(String f, String l, int r, int s) {
+    public TonyNguyen (String f, String l, int r, int s) {
         firstName=f;
         lastName=l;
         mySeatX=r;
@@ -38,7 +38,7 @@ public class NguyenTony extends Student implements SpecialInterestOrHobby
      * Pay attention to how the row and seat variables set the location of the image.  1,1 is the first cell in the upper left
      * of the classroom.
      */
-    public NguyenTony() {
+    public TonyNguyen() {
         firstName="Tony";
         lastName="Nguyen";
         mySeatX=1;
