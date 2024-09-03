@@ -111,11 +111,11 @@ public class MichaelOliveira extends Student implements SpecialInterestOrHobby
         }      
          // move left
         for (int i=9;i>=0;i--){
-            setLocation(i,5);
+            setLocation(i,1);
             Greenfoot.delay(10);
         }      
               // move Forward
-        for (int i=5;i>=0;i--){
+        for (int i=1;i>=0;i--){
             setLocation(0,i);
             Greenfoot.delay(10);
         }   
