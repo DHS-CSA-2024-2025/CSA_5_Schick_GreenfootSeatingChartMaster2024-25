@@ -7,6 +7,7 @@ VERSION or DATE: 07/21/2020
 Version 5 (2024-25): 08/15/24
 
 HOW TO START THIS PROJECT:  To start this project, assuming that you have Greenfoot installed, click on the greenfoot project file within the top level of the assignment directory.  If greenfoot is correctly installed, you will see a green foot icon just to the left of "project".
+See https://medium.com/@swinkler/git-workflow-explained-a-step-by-step-guide-83c1c9247f03 for more detailed instructions.
 
 AUTHORS:                    Mr. Kaehms, Dr. Schick, Mr. Song,  and CSA students
 
