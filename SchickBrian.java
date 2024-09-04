@@ -39,12 +39,12 @@ public class SchickBrian extends Student implements SpecialInterestOrHobby
      * of the classroom.
      */
     public SchickBrian() {
-        firstName="Kilgore";
-        lastName="Trout";
-        mySeatX=1;
-        mySeatY=1;
+        firstName="Brian";
+        lastName="Schick";
+        mySeatX=2;
+        mySeatY=9;
        // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
-       portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
+       portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".gif";
        standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
         soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
         setImage(portraitFile);
