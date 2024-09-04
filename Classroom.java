@@ -160,6 +160,10 @@ public class Classroom extends World
         MingyuKang mingyukang = new MingyuKang();
         addObject(mingyukang,5,4);
         mingyukang.assignSeat();
+        
+        SanathVenkatachalam sanathvenkatachalam = new SanathVenkatachalam();
+        addObject(sanathvenkatachalam,8,4);
+        sanathvenkatachalam.assignSeat();
   
     }
     
