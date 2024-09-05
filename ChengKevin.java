@@ -39,8 +39,8 @@ public class ChengKevin extends Student implements SpecialInterestOrHobby
      * of the classroom.
      */
     public ChengKevin() {
-        firstName="Kilgore";
-        lastName="Trout";
+        firstName="Kevin";
+        lastName="Cheng";
         mySeatX=1;
         mySeatY=1;
        // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
@@ -66,13 +66,13 @@ public class ChengKevin extends Student implements SpecialInterestOrHobby
                 getName();
                 sayName(soundFile);
             
-                myHobby("I like to time travel!");
+                myHobby("I like to write short stories.");
             // Create a "special method for your class and put the call here.  You can twirl your image, resize it, move it around, change transparancy, or a 
             // combination of all of those types of actions, or more. Make sure to save the original image if you manipulate it, so that you can put it back.
             // Call the sitDown() method to move back  to your seat
             
-                circleClass();  // Kilgore Trount's special method... Please write one of your own. You can use this, but please modify it and be creative.
-           
+                movement();
+
                 sitDown();
             }
         
@@ -96,31 +96,60 @@ public class ChengKevin extends Student implements SpecialInterestOrHobby
      * This is a local method specific to the ChengKevin class used to animate the character once the image is clicked on.
      * You should write your own methods to perform your own animation for your character/avatar.
      */
-    public void circleClass(){
-        setLocation(0,0);
-         Greenfoot.delay(10);
-        // move right
-        for (int i=1;i<=9;i++){
-            setLocation(i,0);
-            Greenfoot.delay(10);
+    private int[] movementDecider(boolean x, boolean y){
+        int return_x = 0;
+        int return_y = 0;
+        int[] return_array = new int[2];
+        if (x){
+            return_x ++;
+        } else {
+            return_x --;
         }
-        // move back
-        for (int i=1;i<=5;i++){
-            setLocation(9,i);
-            Greenfoot.delay(10);
-        }      
-         // move left
-        for (int i=9;i>=0;i--){
-            setLocation(i,5);
-            Greenfoot.delay(10);
-        }      
-              // move Forward
-        for (int i=5;i>=0;i--){
-            setLocation(0,i);
-            Greenfoot.delay(10);
-        }   
-           Greenfoot.delay(20);
-           returnToSeat();
+        if (y){
+            return_y ++;
+        } else {
+            return_y --;
+        }
+        return_array[0] = return_x;
+        return_array[1] = return_y;
+        return return_array;
+    }
+    private void movement(){
+        int twiddle_factor = 2;
+        boolean stagex = true;
+        boolean stagey = false;
+        for (int i=0; i<=360; i+=5){
+            if (i%180 == 0 && i != 0) {
+                stagey = !stagey;
+            } else if (i%90==0 && i != 0){
+                stagex = !stagex;
+            }
+            setRotation(i);
+            int[] movement_values = movementDecider(stagex,stagey);
+            if (i%2 == 0) {
+                setLocation(getX()+movement_values[0],getY()+movement_values[1]);
+            }
+            Greenfoot.delay(1);
+        }
+        
+        returnToSeat();
+    }
+    public void returnToSeat(){
+        boolean atSeat = false;
+        while (!atSeat){
+            if (getX() > mySeatX){
+                setLocation(getX()-1,getY());
+            } else if (getX() < mySeatX){
+                setLocation(getX()+1,getY());
+            } else if (getY() > mySeatY){
+                setLocation(getX(),getY()-1);
+            } else if (getY() < mySeatY){
+                setLocation(getX(),getY()+1);
+            } else {
+                atSeat = true;
+            }
+            Greenfoot.delay(2);
+        }
     }
      /**
      * myHobby is one of the interfaces provided.  
