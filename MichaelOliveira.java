@@ -41,8 +41,8 @@ public class MichaelOliveira extends Student implements SpecialInterestOrHobby
     public MichaelOliveira() {
         firstName="Michael";
         lastName="Oliveira";
-        mySeatX=1;
-        mySeatY=1;
+        mySeatX=6;
+        mySeatY=6;
        // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
@@ -66,7 +66,7 @@ public class MichaelOliveira extends Student implements SpecialInterestOrHobby
                 getName();
                 sayName(soundFile);
             
-                myHobby("I like to time travel!");
+                myHobby("I play the violin, cello, and trumpet!");
             // Create a "special method for your class and put the call here.  You can twirl your image, resize it, move it around, change transparancy, or a 
             // combination of all of those types of actions, or more. Make sure to save the original image if you manipulate it, so that you can put it back.
             // Call the sitDown() method to move back  to your seat
@@ -97,28 +97,39 @@ public class MichaelOliveira extends Student implements SpecialInterestOrHobby
      * You should write your own methods to perform your own animation for your character/avatar.
      */
     public void circleClass(){
-        setLocation(0,0);
+        setLocation(7,3);
          Greenfoot.delay(10);
-        // move right
-        for (int i=1;i<=9;i++){
-            setLocation(i,0);
+        // move down
+        for (int i=3;i<=8;i++){
+            setLocation(7,i);
             Greenfoot.delay(10);
         }
-        // move back
-        for (int i=1;i<=5;i++){
-            setLocation(9,i);
+        setRotation(30);
+        // move left
+        for (int i=7;i>=1;i--){
+            setLocation(i,8);
             Greenfoot.delay(10);
         }      
-         // move left
-        for (int i=9;i>=0;i--){
-            setLocation(i,5);
+        setRotation(-30);
+
+        // move up
+        for (int i=8;i>=2;i--){
+            setLocation(1,i);
             Greenfoot.delay(10);
-        }      
-              // move Forward
-        for (int i=5;i>=0;i--){
-            setLocation(0,i);
+        }
+        setRotation(30);
+        // move right
+        for (int i=1;i<=7;i++){
+            setLocation(i,2);
             Greenfoot.delay(10);
-        }   
+        }
+        setRotation(-30);
+        // move down
+        for (int i=2;i<=3;i++){
+            setLocation(7,i);
+            Greenfoot.delay(10);
+        }
+        setRotation(0);
            Greenfoot.delay(20);
            returnToSeat();
     }
