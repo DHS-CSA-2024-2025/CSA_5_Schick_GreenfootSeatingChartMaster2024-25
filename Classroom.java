@@ -164,6 +164,10 @@ public class Classroom extends World
         TonyNguyen tonynguyen = new TonyNguyen();
         addObject(tonynguyen,6,10);
         tonynguyen.assignSeat();
+        
+        SanathVenkatachalam sanathvenkatachalam = new SanathVenkatachalam();
+        addObject(sanathvenkatachalam,8,4);
+        sanathvenkatachalam.assignSeat();
   
     }
     
