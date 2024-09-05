@@ -38,7 +38,7 @@ public class RameshSanjay extends Student implements SpecialInterestOrHobby
      * Pay attention to how the row and seat variables set the location of the image.  1,1 is the first cell in the upper left
      * of the classroom.
      */
-    public KilgoreTrout() {
+    public RameshSanjay() {
         firstName="Ramesh";
         lastName="Sanjay";
         mySeatX=1;
