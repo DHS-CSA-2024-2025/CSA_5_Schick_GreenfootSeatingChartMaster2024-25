@@ -155,6 +155,9 @@ public class Classroom extends World
         SiqiLi siqili = new SiqiLi();
         addObject(siqili,3,3);
         siqili.assignSeat();
+        ArnavShah arnavshah = new ArnavShah();
+        addObject(arnavshah,9,9);
+        arnavshah.assignSeat();
         
   
     }
