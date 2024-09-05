@@ -173,7 +173,7 @@ public class Classroom extends World
         addObject(schickbrian,2,9);
         kilgoretrout.assignSeat();
         
-        WanAlan-patch-2
+        //WanAlan-patch-2
         AlanWan alanwan = new AlanWan();
         addObject(alanwan,9,3);
         alanwan.assignSeat();
