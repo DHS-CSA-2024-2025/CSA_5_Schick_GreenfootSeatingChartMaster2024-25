@@ -169,11 +169,11 @@ public class Classroom extends World
         addObject(sanathvenkatachalam,8,4);
         sanathvenkatachalam.assignSeat();
   
-        WanAlan-patch-2
+        //WanAlan-patch-2
         AlanWan alanwan = new AlanWan();
         addObject(alanwan,9,3);
         alanwan.assignSeat();
-        main
+        //main
     }
     
     public List<Student> getAllStudents(){
