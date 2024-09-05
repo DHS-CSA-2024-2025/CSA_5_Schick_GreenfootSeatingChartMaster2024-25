@@ -169,6 +169,14 @@ public class Classroom extends World
         addObject(sanathvenkatachalam,8,4);
         sanathvenkatachalam.assignSeat();
   
+        AlanWan alanwan = new AlanWan();
+        addObject(alanwan,9,3);
+        alanwan.assignSeat();
+     
+        SiqiLi siqili = new SiqiLi();
+        addObject(siqili, 5,6);
+        siqili.assignSeat();
+  
         WanAlan-patch-2
         AlanWan alanwan = new AlanWan();
         addObject(alanwan,9,3);
