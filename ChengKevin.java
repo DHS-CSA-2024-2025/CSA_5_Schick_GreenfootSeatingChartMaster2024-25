@@ -129,7 +129,7 @@ public class ChengKevin extends Student implements SpecialInterestOrHobby
             if (i%2 == 0) {
                 setLocation(getX()+movement_values[0],getY()+movement_values[1]);
             }
-            Greenfoot.delay(1);
+            Greenfoot.delay(3);
         }
         
         returnToSeat();
@@ -148,7 +148,7 @@ public class ChengKevin extends Student implements SpecialInterestOrHobby
             } else {
                 atSeat = true;
             }
-            Greenfoot.delay(2);
+            Greenfoot.delay(10);
         }
     }
      /**
