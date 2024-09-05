@@ -41,10 +41,10 @@ public class TonyNguyen extends Student implements SpecialInterestOrHobby
     public TonyNguyen() {
         firstName="Tony";
         lastName="Nguyen";
-        mySeatX=1;
-        mySeatY=1;
+        mySeatX=6;
+        mySeatY=10;
        // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
-       portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
+       portraitFile= firstName.toLowerCase() + lastName.toLowerCase() +".jpg";
        standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
         soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
         setImage(portraitFile);
@@ -97,8 +97,8 @@ public class TonyNguyen extends Student implements SpecialInterestOrHobby
      * You should write your own methods to perform your own animation for your character/avatar.
      */
     public void circleClass(){
-        setLocation(0,0);
-         Greenfoot.delay(10);
+        setLocation(4,4);
+         Greenfoot.delay(5);
         // move right
         for (int i=1;i<=9;i++){
             setLocation(i,0);
