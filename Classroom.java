@@ -153,9 +153,21 @@ public class Classroom extends World
         addObject(kilgoretrout,2,3);
         kilgoretrout.assignSeat();
         
+        MichaelOliveira michaeloliveira = new MichaelOliveira();
+        addObject(michaeloliveira,8,3);
+        michaeloliveira.assignSeat();
+     
+        MingyuKang mingyukang = new MingyuKang();
+        addObject(mingyukang,5,4);
+        mingyukang.assignSeat();
+        main
+
+
+        JonathanSong
         JonathanSong jonathansong = new JonathanSong();
         addObject(jonathansong,8,7);
         jonathansong.assignSeat();
+=======
   
     }
     
