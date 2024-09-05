@@ -41,11 +41,11 @@ public class SanathVenkatachalam extends Student implements SpecialInterestOrHob
     public SanathVenkatachalam() {
         firstName="Sanath";
         lastName="Venkatachalam";
-        mySeatX=1;
-        mySeatY=1;
-       // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
-       portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
-       standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
+        mySeatX=8;
+        mySeatY=4;
+        //imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
+        portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
+        standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
         soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
         setImage(portraitFile);
         sitting=true;
