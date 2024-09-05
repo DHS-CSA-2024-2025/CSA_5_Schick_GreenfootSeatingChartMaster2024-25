@@ -152,14 +152,9 @@ public class Classroom extends World
         KilgoreTrout kilgoretrout = new KilgoreTrout();
         addObject(kilgoretrout,2,3);
         kilgoretrout.assignSeat();
-        
-        MichaelOliveira michaeloliveira = new MichaelOliveira();
-        addObject(michaeloliveira,8,3);
-        michaeloliveira.assignSeat();
-     
-        MingyuKang mingyukang = new MingyuKang();
-        addObject(mingyukang,5,4);
-        mingyukang.assignSeat();
+        SiqiLi siqili = new SiqiLi();
+        addObject(siqili, 5,6);
+        siqili.assignSeat();
   
     }
     
