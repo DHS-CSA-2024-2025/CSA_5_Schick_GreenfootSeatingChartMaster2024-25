@@ -180,10 +180,6 @@ public class Classroom extends World
         SiqiLi siqili = new SiqiLi();
         addObject(siqili, 5,6);
         siqili.assignSeat();
-        
-        ShaileshMaddikera shaileshmaddikera = new ShaileshMaddikera();
-        addObject(shaileshmaddikera,5,7);
-        shaileshmaddikera.assignSeat();
     }
     
     public List<Student> getAllStudents(){
