@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=KilgoreTrout
+comment0.text=\n\ The\ KilgoreTrout\ class\ can\ be\ used\ as\ a\ model\ for\ your\ own\ class\ that\ represents\ you\ and\ your\ seating\ location\ in\ AP\ CSA\n\ \n\ @author\ Mr.\ Kaehms\n\ @version\ 2.0\ Aug\ 13,\ 2019\n\ @version\ 3.0\ July\ 21,\ 2020\n
+comment1.params=f\ l\ r\ s
+comment1.target=KilgoreTrout(java.lang.String,\ java.lang.String,\ int,\ int)
+comment1.text=\n\ Constructor\ for\ the\ KilgoreTrout\ class.\n\ Constructors\ are\ special\ methods\ with\ the\ same\ exact\ name\ as\ the\ class\ name.\ \ \n\ Constructors\ to\ not\ have\ return\ types.\n\ Constructors\ can\ be\ overloaded.\ This\ means\ we\ can\ call\ a\ constructor\ with\ different\ sets\ of\ parameter\n\ \ lists\ to\ initalize\ for\ different\ conditions\ (depending\ on\ what\ constructors\ have\ been\ written.\n\ @param\ String\ f\ (firstname)\n\ @param\ String\ l\ (lastname)\n\ @param\ int\ r\ (row\ of\ seating\ arrangement)\n\ @param\ int\ s\ (seat\ number\ within\ row\ seating\ arrangement)\n\ \n
+comment2.params=
+comment2.target=KilgoreTrout()
+comment2.text=\n\ Default\ constructor,\ if\ you\ don't\ pass\ in\ a\ name\ and\ seating\ location\n\ Pay\ attention\ to\ how\ the\ row\ and\ seat\ variables\ set\ the\ location\ of\ the\ image.\ \ 1,1\ is\ the\ first\ cell\ in\ the\ upper\ left\n\ of\ the\ classroom.\n
+comment3.params=
+comment3.target=void\ act()
+comment3.text=\n\ Act\ -\ do\ whatever\ the\ KilgoreTrout\ actor\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
+comment4.params=
+comment4.target=void\ getName()
+comment4.text=\n\ Prints\ the\ first\ and\ last\ name\ to\ the\ console\n
+comment5.params=
+comment5.target=void\ circleClass()
+comment5.text=\n\ This\ is\ a\ local\ method\ specific\ to\ the\ KilgoreTrout\ class\ used\ to\ animate\ the\ character\ once\ the\ image\ is\ clicked\ on.\n\ You\ should\ write\ your\ own\ methods\ to\ perform\ your\ own\ animation\ for\ your\ character/avatar.\n
+comment6.params=s
+comment6.target=void\ myHobby(java.lang.String)
+comment6.text=\n\ myHobby\ is\ one\ of\ the\ interfaces\ provided.\ \ \n\ An\ interface\ is\ just\ a\ contract\ for\ the\ methods\ that\ you\ will\ implement\ in\ your\ code.\ \ The\ College\ Board\ no\ longer\n\ tests\ on\ abstract\ classes\ and\ interfaces,\ but\ it\ is\ good\ to\ know\ about\ them\n
+numComments=7

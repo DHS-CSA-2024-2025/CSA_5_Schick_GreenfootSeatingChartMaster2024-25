@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=MingyuKang
+comment1.params=
+comment1.target=MingyuKang()
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ startAnimation()
+comment4.params=
+comment4.target=void\ addNewErrorWindow()
+comment5.params=
+comment5.target=void\ clearErrorWindows()
+comment6.params=
+comment6.target=void\ showBlueScreen()
+comment7.params=
+comment7.target=void\ endAnimation()
+comment8.params=
+comment8.target=void\ getName()
+comment9.params=myHobbySentence
+comment9.target=void\ myHobby(java.lang.String)
+numComments=10

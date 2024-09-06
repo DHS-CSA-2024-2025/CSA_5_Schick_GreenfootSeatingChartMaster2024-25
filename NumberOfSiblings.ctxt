@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=NumberOfSiblings
+comment0.text=\n\ Write\ a\ description\ of\ interface\ NumberOfSiblings\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=int\ numberOfSiblings()
+comment2.params=
+comment2.target=int\ numberOfBrothers()
+comment3.params=
+comment3.target=int\ numberOfSisters()
+numComments=4
