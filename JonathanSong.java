@@ -29,7 +29,7 @@ public class JonathanSong extends Student implements SpecialInterestOrHobby
         mySeatY=s;
         portraitFile=f.toLowerCase()+l.toLowerCase()+".jpg";    // Make sure to name your image files firstlast.jpg, all lowercase!!!
         standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
-        soundFile=f.toLowerCase()+l.toLowerCase()+".wav";  // Make sure to name your sound files firstlast.wav, all lowercase!!!
+        soundFile=f.toLowerCase()+l.toLowerCase()+".mp3";  // Make sure to name your sound files firstlast.wav, all lowercase!!!
         setImage(portraitFile);
         sitting=true;
     }
@@ -41,12 +41,13 @@ public class JonathanSong extends Student implements SpecialInterestOrHobby
     public JonathanSong() {
         firstName="Jonathan";
         lastName="Song";
-        mySeatX=4;
-        mySeatY=5;
+        mySeatX=8;
+        mySeatY=7;
+        
        // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
-       portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
-       standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
-        soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
+       portraitFile="jonathansong.png";
+       standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.png";
+        soundFile="jonathansong.mp3";
         setImage(portraitFile);
         sitting=true;
     }
@@ -97,7 +98,7 @@ public class JonathanSong extends Student implements SpecialInterestOrHobby
      * You should write your own methods to perform your own animation for your character/avatar.
      */
     public void circleClass(){
-        setLocation(0,0);
+        setLocation(8,7);
          Greenfoot.delay(10);
         // move right
         for (int i=1;i<=9;i++){

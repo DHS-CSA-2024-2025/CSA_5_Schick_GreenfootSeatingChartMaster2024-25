@@ -168,6 +168,11 @@ public class Classroom extends World
         MingyuKang mingyukang = new MingyuKang();
         addObject(mingyukang,5,4);
         mingyukang.assignSeat();
+        JonathanSong
+        main
+
+
+=======
         
         NagarurAvaneesh nagaruravaneesh = new NagarurAvaneesh();
         addObject(nagaruravaneesh,5,9);
@@ -177,6 +182,7 @@ public class Classroom extends World
         addObject(tonynguyen,6,10);
         tonynguyen.assignSeat();
         
+
         SanathVenkatachalam sanathvenkatachalam = new SanathVenkatachalam();
         addObject(sanathvenkatachalam,8,4);
         sanathvenkatachalam.assignSeat();
@@ -192,6 +198,10 @@ public class Classroom extends World
         ShaileshMaddikera shaileshmaddikera = new ShaileshMaddikera();
         addObject(shaileshmaddikera,5,7);
         shaileshmaddikera.assignSeat();
+
+        JonathanSong jonathansong = new JonathanSong();
+        addObject(jonathansong,8,7);
+        jonathansong.assignSeat();
     }
     
     public List<Student> getAllStudents(){
