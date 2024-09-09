@@ -168,11 +168,6 @@ public class Classroom extends World
         MingyuKang mingyukang = new MingyuKang();
         addObject(mingyukang,5,4);
         mingyukang.assignSeat();
-        JonathanSong
-        main
-
-
-=======
         
         NagarurAvaneesh nagaruravaneesh = new NagarurAvaneesh();
         addObject(nagaruravaneesh,5,9);
