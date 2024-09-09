@@ -156,7 +156,11 @@ public class Classroom extends World
           MingyuKang mingyukang = new MingyuKang();
         addObject(mingyukang,5,4);
         mingyukang.assignSeat();
-  
+        
+        PragyaRanjan pragyaranjan = new PragyaRanjan();
+        addObject(pragyaranjan,9,10);
+        pragyaranjan.assignSeat();
+
     }
     
     public List<Student> getAllStudents(){

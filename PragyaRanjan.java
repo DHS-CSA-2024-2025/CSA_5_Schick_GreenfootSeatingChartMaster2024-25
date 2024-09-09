@@ -8,22 +8,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class PragyaRanjan extends Student implements SpecialInterestOrHobby
 {
-    private String firstName;
-    private String lastName;
-    private int mySeatX;
-    private int mySeatY;
-    private String portraitFile;
-    private String standingFile;
-    private String soundFile;
-    private boolean sitting;
     
-    /**
-     * Constructor for the PragyaRanjan class.
-     * @param String f (firstname)
-     * @param String l (lastname)
-     * @param int r (row of seating arrangement)
-     * @param int s (seat number within row seating arrangement)
-     */
+    
+   
     public PragyaRanjan(String f, String l, int r, int s) {
         firstName = f;
         lastName = l;
@@ -34,20 +21,28 @@ public class PragyaRanjan extends Student implements SpecialInterestOrHobby
         soundFile = f.toLowerCase() + l.toLowerCase() + ".wav";  // Make sure to name your sound files firstlast.wav, all lowercase!!!
         
         // Set the image without resizing
-        GreenfootImage originalImage = new GreenfootImage(portraitFile);
-        setImage(originalImage);
+        setImage(portraitFile); 
         
         sitting = true;
         
-        // Set the initial position to the seat location
-        setLocation(mySeatX, mySeatY);
     }
 
     /**
      * Default constructor, if you don't pass in a name and seating location
+     * Pay attention to how the row and seat variables set the location of the image.  1,1 is the first cell in the upper left
+     * of the classroom.
      */
     public PragyaRanjan() {
-        this("Pragya", "Ranjan", 1, 1);
+        firstName="Pragya";
+        lastName="Ranjan";
+        mySeatX=9;
+        mySeatY=10;
+       // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
+       portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
+       standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
+        soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
+        setImage(portraitFile);
+        sitting=true;
     }
     
     /**
@@ -77,7 +72,7 @@ public class PragyaRanjan extends Student implements SpecialInterestOrHobby
     }
 
     /**
-     * This is a local method specific to the PragyaRanjan class used to animate the character once the image is clicked on.
+     * This is a local method specific to the CopyOfPragyaRanjan class used to animate the character once the image is clicked on.
      * You should write your own methods to perform your own animation for your character/avatar.
      */
     public void blinkClass() {
@@ -88,7 +83,7 @@ public class PragyaRanjan extends Student implements SpecialInterestOrHobby
     // Define three blink positions
     int[][] blinkPositions = {
         {startX - 50, startY - 50},
-        {startX + 50, startY - 50},
+        {startX + 20, startY - 50},
         {startX-20, startY-10},
         {startX, startY + 50}
     };
@@ -100,7 +95,8 @@ public class PragyaRanjan extends Student implements SpecialInterestOrHobby
     }
     
     Greenfoot.delay(20); // Additional pause before returning to seat
-    returnToSeat(); // Return to the original seat
+    sitDown();// Return to the original seat
+    sayName(soundFile); 
 }
 
     /**
