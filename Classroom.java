@@ -164,6 +164,14 @@ public class Classroom extends World
         NagarurAvaneesh nagaruravaneesh = new NagarurAvaneesh();
         addObject(nagaruravaneesh,5,9);
         nagaruravaneesh.assignSeat();
+
+        TonyNguyen tonynguyen = new TonyNguyen();
+        addObject(tonynguyen,6,10);
+        tonynguyen.assignSeat();
+        
+        SanathVenkatachalam sanathvenkatachalam = new SanathVenkatachalam();
+        addObject(sanathvenkatachalam,8,4);
+        sanathvenkatachalam.assignSeat();
   
     }
     
