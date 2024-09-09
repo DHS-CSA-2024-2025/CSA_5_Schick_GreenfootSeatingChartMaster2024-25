@@ -69,7 +69,7 @@ changes so that we can share across classes.
 
 5) Before you start, each period should agree on a build-master or build-masters, and a workflow that they will use to manage and update the master repository.  Access rights can be assigned to groups. Individual classes can work with their teacher to set up appropriate groups that can be managed within the class repository for this project.
 
-See the Canvas instructions for a complete set of requirements for this year's project.
+See the Canvas instructions for a complete set of requirements for this year's project. 
 
 
 
