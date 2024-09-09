@@ -66,7 +66,7 @@ public class SanathVenkatachalam extends Student implements SpecialInterestOrHob
                 getName();
                 sayName(soundFile);
             
-                myHobby("I like to time travel!");
+                myHobby("I like to play videogames!");
             // Create a "special method for your class and put the call here.  You can twirl your image, resize it, move it around, change transparancy, or a 
             // combination of all of those types of actions, or more. Make sure to save the original image if you manipulate it, so that you can put it back.
             // Call the sitDown() method to move back  to your seat
@@ -119,5 +119,6 @@ public class SanathVenkatachalam extends Student implements SpecialInterestOrHob
      public void myHobby(String s) {
          System.out.println(s);
     }
+    
 
 }
