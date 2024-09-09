@@ -7,7 +7,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @version 2.0 Aug 13, 2019
  * @version 3.0 July 21, 2020
  */
-public class RameshSanjay extends Student implements SpecialInterestOrHobby
+public class AmirEftekhar extends Student implements SpecialInterestOrHobby
 {
 
     /**
@@ -22,14 +22,14 @@ public class RameshSanjay extends Student implements SpecialInterestOrHobby
      * @param int s (seat number within row seating arrangement)
      * 
      */
-    public RameshSanjay(String f, String l, int r, int s) {
+    public AmirEftekhar(String f, String l, int r, int s) {
         firstName=f;
         lastName=l;
         mySeatX=r;
         mySeatY=s;
-        portraitFile=f.toLowerCase()+l.toLowerCase()+".jpg";    // Make sure to name your image files firstlast.jpg, all lowercase!!!
-        standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
-        soundFile=f.toLowerCase()+l.toLowerCase()+".wav";  // Make sure to name your sound files firstlast.wav, all lowercase!!!
+        portraitFile="kilgoretrout.jpg";
+       standingFile="kilgoretrout-standing.jpg";
+        soundFile="kilgoretrout.wav";
         setImage(portraitFile);
         sitting=true;
     }
@@ -38,15 +38,15 @@ public class RameshSanjay extends Student implements SpecialInterestOrHobby
      * Pay attention to how the row and seat variables set the location of the image.  1,1 is the first cell in the upper left
      * of the classroom.
      */
-    public RameshSanjay() {
-        firstName="Ramesh";
-        lastName="Sanjay";
+    public AmirEftekhar() {
+        firstName="Amir";
+        lastName="Eftekhar";
         mySeatX=1;
-        mySeatY=1;
+        mySeatY=5;
        // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
-       portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
-       standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
-        soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
+       portraitFile="kilgoretrout.jpg";
+       standingFile="kilgoretrout-standing.jpg";
+        soundFile="kilgoretrout.wav";
         setImage(portraitFile);
         sitting=true;
     }

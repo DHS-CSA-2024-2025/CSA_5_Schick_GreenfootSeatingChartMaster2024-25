@@ -41,8 +41,8 @@ public class AnirudhMuralidharan extends Student implements SpecialInterestOrHob
     public AnirudhMuralidharan() {
         firstName="Anirudh";
         lastName="Muralidharan";
-        mySeatX=1;
-        mySeatY=1;
+        mySeatX=6;
+        mySeatY=9;
        // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
