@@ -30,7 +30,7 @@ public class SwaminathanSivakumar extends Student implements SpecialInterestOrHo
         portraitFile=f.toLowerCase()+l.toLowerCase()+".jpg";    // Make sure to name your image files firstlast.jpg, all lowercase!!!
         standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
         soundFile=f.toLowerCase()+l.toLowerCase()+".wav";  // Make sure to name your sound files firstlast.wav, all lowercase!!!
-        setImage(portraitFile);
+        setImage("swaminathansivakumar.jpg");
         sitting=true;
     }
     /**
@@ -47,7 +47,7 @@ public class SwaminathanSivakumar extends Student implements SpecialInterestOrHo
        portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
         soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
-        setImage(portraitFile);
+        setImage("swaminathansivakumar.jpg");
         sitting=true;
     }
     

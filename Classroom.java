@@ -152,6 +152,21 @@ public class Classroom extends World
         KilgoreTrout kilgoretrout = new KilgoreTrout();
         addObject(kilgoretrout,2,3);
         kilgoretrout.assignSeat();
+<<<<<<< Updated upstream
+=======
+        
+        MichaelOliveira michaeloliveira = new MichaelOliveira();
+        addObject(michaeloliveira,8,3);
+        michaeloliveira.assignSeat();
+     
+        MingyuKang mingyukang = new MingyuKang();
+        addObject(mingyukang,5,4);
+        mingyukang.assignSeat();
+        
+        SwaminathanSivakumar swaminathansivakumar = new SwaminathanSivakumar();
+        addObject(swaminathansivakumar,8,9);
+        swaminathansivakumar.assignSeat();
+>>>>>>> Stashed changes
   
     }
     
