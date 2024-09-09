@@ -180,6 +180,10 @@ public class Classroom extends World
         SiqiLi siqili = new SiqiLi();
         addObject(siqili, 5,6);
         siqili.assignSeat();
+
+        SchickBrian schickbrian = new SchickBrian();
+        addObject(schickbrian,2,9);
+        kilgoretrout.assignSeat();
     }
     
     public List<Student> getAllStudents(){
