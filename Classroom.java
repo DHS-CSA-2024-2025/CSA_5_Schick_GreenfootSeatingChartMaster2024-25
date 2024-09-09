@@ -153,13 +153,60 @@ public class Classroom extends World
         addObject(kilgoretrout,2,3);
         kilgoretrout.assignSeat();
         
-          MingyuKang mingyukang = new MingyuKang();
+
+        AmirEftekhar Amir = new AmirEftekhar();
+        addObject(Amir,1,2);
+        Amir.assignSeat();
+        ChengKevin chengkevin = new ChengKevin();
+        addObject(chengkevin,3,6);
+        chengkevin.assignSeat();
+
+        ArnavShah arnavshah = new ArnavShah();
+        addObject(arnavshah,9,9);
+        arnavshah.assignSeat();
+       
+        MichaelOliveira michaeloliveira = new MichaelOliveira();
+        addObject(michaeloliveira,8,3);
+        michaeloliveira.assignSeat();
+     
+        MingyuKang mingyukang = new MingyuKang();
         addObject(mingyukang,5,4);
         mingyukang.assignSeat();
         
+
         PragyaRanjan pragyaranjan = new PragyaRanjan();
         addObject(pragyaranjan,9,10);
         pragyaranjan.assignSeat();
+
+        NagarurAvaneesh nagaruravaneesh = new NagarurAvaneesh();
+        addObject(nagaruravaneesh,5,9);
+        nagaruravaneesh.assignSeat();
+        
+        TonyNguyen tonynguyen = new TonyNguyen();
+        addObject(tonynguyen,6,10);
+        tonynguyen.assignSeat();
+        
+
+        SanathVenkatachalam sanathvenkatachalam = new SanathVenkatachalam();
+        addObject(sanathvenkatachalam,8,4);
+        sanathvenkatachalam.assignSeat();
+
+  
+        AlanWan alanwan = new AlanWan();
+        addObject(alanwan,9,3);
+        alanwan.assignSeat();
+     
+        SiqiLi siqili = new SiqiLi();
+        addObject(siqili, 5,6);
+        siqili.assignSeat();
+        
+        ShaileshMaddikera shaileshmaddikera = new ShaileshMaddikera();
+        addObject(shaileshmaddikera,5,7);
+        shaileshmaddikera.assignSeat();
+
+        JonathanSong jonathansong = new JonathanSong();
+        addObject(jonathansong,8,7);
+        jonathansong.assignSeat();
 
     }
     
