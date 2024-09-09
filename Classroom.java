@@ -153,6 +153,10 @@ public class Classroom extends World
         addObject(kilgoretrout,2,3);
         kilgoretrout.assignSeat();
         
+
+        AmirEftekhar Amir = new AmirEftekhar();
+        addObject(Amir,1,2);
+        Amir.assignSeat();
         ChengKevin chengkevin = new ChengKevin();
         addObject(chengkevin,3,6);
         chengkevin.assignSeat();
@@ -181,6 +185,7 @@ public class Classroom extends World
         SanathVenkatachalam sanathvenkatachalam = new SanathVenkatachalam();
         addObject(sanathvenkatachalam,8,4);
         sanathvenkatachalam.assignSeat();
+
   
         AlanWan alanwan = new AlanWan();
         addObject(alanwan,9,3);
