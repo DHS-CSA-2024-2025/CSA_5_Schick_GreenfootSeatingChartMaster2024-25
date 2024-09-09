@@ -23,6 +23,7 @@ public class MingyuKang extends Student implements SpecialInterestOrHobby {
 
     public void act() {
         if (Greenfoot.mouseClicked(this)) {
+            Greenfoot.playSound("mingyukang.wav");
             startAnimation();
         }
 
