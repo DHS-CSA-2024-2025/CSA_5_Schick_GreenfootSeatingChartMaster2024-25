@@ -30,7 +30,7 @@ public class AmirEftekhar extends Student implements SpecialInterestOrHobby
 
         portraitFile="amireftekhar.png";
        standingFile="amireftekharstanding.jpg";
-        soundFile="amireftekhar.wav";
+        soundFile="amirsound.wav";
 
 
 
@@ -51,7 +51,7 @@ public class AmirEftekhar extends Student implements SpecialInterestOrHobby
 
        portraitFile="amireftekhar.png";
       standingFile="amireftekharstanding.jpg";
-        soundFile="amireftekhar.wav";
+        soundFile="amirsound.wav";
 
 
 
