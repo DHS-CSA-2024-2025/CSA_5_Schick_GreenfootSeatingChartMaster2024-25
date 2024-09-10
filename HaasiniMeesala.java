@@ -41,8 +41,8 @@ public class HaasiniMeesala extends Student implements SpecialInterestOrHobby
     public HaasiniMeesala() {
         firstName="Haasini";
         lastName="Meesala";
-        mySeatX=1;
-        mySeatY=1;
+        mySeatX=6;
+        mySeatY=7;
        // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
