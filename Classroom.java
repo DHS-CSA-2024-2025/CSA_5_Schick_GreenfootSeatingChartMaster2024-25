@@ -152,6 +152,14 @@ public class Classroom extends World
         KilgoreTrout kilgoretrout = new KilgoreTrout();
         addObject(kilgoretrout,2,3);
         kilgoretrout.assignSeat();
+        
+
+        AmirEftekhar Amir = new AmirEftekhar();
+        addObject(Amir,1,2);
+        Amir.assignSeat();
+        ChengKevin chengkevin = new ChengKevin();
+        addObject(chengkevin,3,6);
+        chengkevin.assignSeat();
 
         ArnavShah arnavshah = new ArnavShah();
         addObject(arnavshah,9,9);
@@ -165,13 +173,24 @@ public class Classroom extends World
         addObject(mingyukang,5,4);
         mingyukang.assignSeat();
         
+
+        PragyaRanjan pragyaranjan = new PragyaRanjan();
+        addObject(pragyaranjan,9,10);
+        pragyaranjan.assignSeat();
+
+        NagarurAvaneesh nagaruravaneesh = new NagarurAvaneesh();
+        addObject(nagaruravaneesh,5,9);
+        nagaruravaneesh.assignSeat();
+        
         TonyNguyen tonynguyen = new TonyNguyen();
         addObject(tonynguyen,6,10);
         tonynguyen.assignSeat();
         
+
         SanathVenkatachalam sanathvenkatachalam = new SanathVenkatachalam();
         addObject(sanathvenkatachalam,8,4);
         sanathvenkatachalam.assignSeat();
+
   
         AlanWan alanwan = new AlanWan();
         addObject(alanwan,9,3);
@@ -184,6 +203,14 @@ public class Classroom extends World
         SchickBrian schickbrian = new SchickBrian();
         addObject(schickbrian,2,9);
         kilgoretrout.assignSeat();
+        
+        ShaileshMaddikera shaileshmaddikera = new ShaileshMaddikera();
+        addObject(shaileshmaddikera,5,7);
+        shaileshmaddikera.assignSeat();
+
+        JonathanSong jonathansong = new JonathanSong();
+        addObject(jonathansong,8,7);
+        jonathansong.assignSeat();
     }
     
     public List<Student> getAllStudents(){

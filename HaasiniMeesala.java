@@ -1,17 +1,17 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * The MaddikeraShailesh class can be used as a model for your own class that represents you and your seating location in AP CSA
+ * The HaasiniMeesala class can be used as a model for your own class that represents you and your seating location in AP CSA
  * 
  * @author Mr. Kaehms
  * @version 2.0 Aug 13, 2019
  * @version 3.0 July 21, 2020
  */
-public class MaddikeraShailesh extends Student implements SpecialInterestOrHobby
+public class HaasiniMeesala extends Student implements SpecialInterestOrHobby
 {
 
     /**
-     * Constructor for the MaddikeraShailesh class.
+     * Constructor for the HaasiniMeesala class.
      * Constructors are special methods with the same exact name as the class name.  
      * Constructors to not have return types.
      * Constructors can be overloaded. This means we can call a constructor with different sets of parameter
@@ -22,7 +22,7 @@ public class MaddikeraShailesh extends Student implements SpecialInterestOrHobby
      * @param int s (seat number within row seating arrangement)
      * 
      */
-    public MaddikeraShailesh(String f, String l, int r, int s) {
+    public HaasiniMeesala(String f, String l, int r, int s) {
         firstName=f;
         lastName=l;
         mySeatX=r;
@@ -38,7 +38,7 @@ public class MaddikeraShailesh extends Student implements SpecialInterestOrHobby
      * Pay attention to how the row and seat variables set the location of the image.  1,1 is the first cell in the upper left
      * of the classroom.
      */
-    public MaddikeraShailesh() {
+    public HaasiniMeesala() {
         firstName="Kilgore";
         lastName="Trout";
         mySeatX=1;
@@ -52,7 +52,7 @@ public class MaddikeraShailesh extends Student implements SpecialInterestOrHobby
     }
     
      /**
-     * Act - do whatever the MaddikeraShailesh actor wants to do. This method is called whenever
+     * Act - do whatever the HaasiniMeesala actor wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */   
     public void act() 
@@ -93,7 +93,7 @@ public class MaddikeraShailesh extends Student implements SpecialInterestOrHobby
 
    
     /**
-     * This is a local method specific to the MaddikeraShailesh class used to animate the character once the image is clicked on.
+     * This is a local method specific to the HaasiniMeesala class used to animate the character once the image is clicked on.
      * You should write your own methods to perform your own animation for your character/avatar.
      */
     public void circleClass(){
