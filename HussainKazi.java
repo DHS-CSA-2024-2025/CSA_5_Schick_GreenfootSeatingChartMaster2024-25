@@ -45,7 +45,7 @@ public class HussainKazi extends Student implements SpecialInterestOrHobby
         mySeatY=1;
        // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
-       standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
+       standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpeg";
         soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
         setImage(portraitFile);
         sitting=true;
@@ -66,7 +66,7 @@ public class HussainKazi extends Student implements SpecialInterestOrHobby
                 getName();
                 sayName(soundFile);
             
-                myHobby("I like to time travel!");
+                myHobby("I like to Hike and Bike!");
             // Create a "special method for your class and put the call here.  You can twirl your image, resize it, move it around, change transparancy, or a 
             // combination of all of those types of actions, or more. Make sure to save the original image if you manipulate it, so that you can put it back.
             // Call the sitDown() method to move back  to your seat
@@ -100,13 +100,13 @@ public class HussainKazi extends Student implements SpecialInterestOrHobby
         setLocation(0,0);
          Greenfoot.delay(10);
         // move right
-        for (int i=1;i<=9;i++){
+        for (int i=1;i<=10;i++){
             setLocation(i,0);
             Greenfoot.delay(10);
         }
         // move back
         for (int i=1;i<=5;i++){
-            setLocation(9,i);
+            setLocation(10,i);
             Greenfoot.delay(10);
         }      
          // move left
