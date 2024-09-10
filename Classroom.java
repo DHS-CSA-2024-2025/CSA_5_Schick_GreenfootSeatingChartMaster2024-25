@@ -173,6 +173,9 @@ public class Classroom extends World
         addObject(mingyukang,5,4);
         mingyukang.assignSeat();
         
+        AnirudhMuralidharan anirudhmuralidharan = new AnirudhMuralidharan();
+        addObject(anirudhmuralidharan, 6, 9);
+        anirudhmuralidharan.assignSeat();
 
         PragyaRanjan pragyaranjan = new PragyaRanjan();
         addObject(pragyaranjan,9,10);
