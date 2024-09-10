@@ -1,17 +1,17 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * The ArjunChakraborty class can be used as a model for your own class that represents you and your seating location in AP CSA
+ * The HussainKazi class can be used as a model for your own class that represents you and your seating location in AP CSA
  * 
  * @author Mr. Kaehms
  * @version 2.0 Aug 13, 2019
  * @version 3.0 July 21, 2020
  */
-public class ArjunChakraborty extends Student implements SpecialInterestOrHobby
+public class HussainKazi extends Student implements SpecialInterestOrHobby
 {
 
     /**
-     * Constructor for the ArjunChakraborty class.
+     * Constructor for the HussainKazi class.
      * Constructors are special methods with the same exact name as the class name.  
      * Constructors to not have return types.
      * Constructors can be overloaded. This means we can call a constructor with different sets of parameter
@@ -22,7 +22,7 @@ public class ArjunChakraborty extends Student implements SpecialInterestOrHobby
      * @param int s (seat number within row seating arrangement)
      * 
      */
-    public ArjunChakraborty(String f, String l, int r, int s) {
+    public HussainKazi(String f, String l, int r, int s) {
         firstName=f;
         lastName=l;
         mySeatX=r;
@@ -38,11 +38,11 @@ public class ArjunChakraborty extends Student implements SpecialInterestOrHobby
      * Pay attention to how the row and seat variables set the location of the image.  1,1 is the first cell in the upper left
      * of the classroom.
      */
-    public ArjunChakraborty() {
-        firstName="Arjun";
-        lastName="Chakraborty";
-        mySeatX=3;
-        mySeatY=7;
+    public HussainKazi() {
+        firstName="Hussain";
+        lastName="Kazi";
+        mySeatX=1;
+        mySeatY=1;
        // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
@@ -52,7 +52,7 @@ public class ArjunChakraborty extends Student implements SpecialInterestOrHobby
     }
     
      /**
-     * Act - do whatever the ArjunChakraborty actor wants to do. This method is called whenever
+     * Act - do whatever the HussainKazi actor wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */   
     public void act() 
@@ -93,7 +93,7 @@ public class ArjunChakraborty extends Student implements SpecialInterestOrHobby
 
    
     /**
-     * This is a local method specific to the ArjunChakraborty class used to animate the character once the image is clicked on.
+     * This is a local method specific to the HussainKazi class used to animate the character once the image is clicked on.
      * You should write your own methods to perform your own animation for your character/avatar.
      */
     public void circleClass(){
@@ -106,7 +106,7 @@ public class ArjunChakraborty extends Student implements SpecialInterestOrHobby
         }
         // move back
         for (int i=1;i<=5;i++){
-            setLocation(i,9);
+            setLocation(9,i);
             Greenfoot.delay(10);
         }      
          // move left
@@ -116,7 +116,7 @@ public class ArjunChakraborty extends Student implements SpecialInterestOrHobby
         }      
               // move Forward
         for (int i=5;i>=0;i--){
-            setLocation(i,0);
+            setLocation(0,i);
             Greenfoot.delay(10);
         }   
            Greenfoot.delay(20);
