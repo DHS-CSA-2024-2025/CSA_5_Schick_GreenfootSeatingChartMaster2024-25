@@ -1,17 +1,17 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * The JonathanSong class can be used as a model for your own class that represents you and your seating location in AP CSA
+ * The KilgoreTrout class can be used as a model for your own class that represents you and your seating location in AP CSA
  * 
  * @author Mr. Kaehms
  * @version 2.0 Aug 13, 2019
  * @version 3.0 July 21, 2020
  */
-public class JonathanSong extends Student implements SpecialInterestOrHobby
+public class AmirEftekhar extends Student implements SpecialInterestOrHobby
 {
 
     /**
-     * Constructor for the JonathanSong class.
+     * Constructor for the KilgoreTrout class.
      * Constructors are special methods with the same exact name as the class name.  
      * Constructors to not have return types.
      * Constructors can be overloaded. This means we can call a constructor with different sets of parameter
@@ -22,14 +22,18 @@ public class JonathanSong extends Student implements SpecialInterestOrHobby
      * @param int s (seat number within row seating arrangement)
      * 
      */
-    public JonathanSong(String f, String l, int r, int s) {
+    public AmirEftekhar(String f, String l, int r, int s) {
         firstName=f;
         lastName=l;
         mySeatX=r;
         mySeatY=s;
-        portraitFile=f.toLowerCase()+l.toLowerCase()+".jpg";    // Make sure to name your image files firstlast.jpg, all lowercase!!!
-        standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
-        soundFile=f.toLowerCase()+l.toLowerCase()+".mp3";  // Make sure to name your sound files firstlast.wav, all lowercase!!!
+
+        portraitFile="amireftekhar.png";
+       standingFile="amireftekharstanding.jpg";
+        soundFile="amireftekhar.wav";
+
+
+
         setImage(portraitFile);
         sitting=true;
     }
@@ -38,22 +42,25 @@ public class JonathanSong extends Student implements SpecialInterestOrHobby
      * Pay attention to how the row and seat variables set the location of the image.  1,1 is the first cell in the upper left
      * of the classroom.
      */
-    public JonathanSong() {
-        firstName="Jonathan";
-        lastName="Song";
-        mySeatX=8;
-        mySeatY=7;
-        
+    public AmirEftekhar() {
+        firstName="Amir";
+        lastName="Eftekhar";
+        mySeatX=1;
+        mySeatY=5;
        // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
-       portraitFile="jonathansong.png";
-       standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.png";
-        soundFile="jonathansong.mp3";
+
+       portraitFile="amireftekhar.png";
+      standingFile="amireftekharstanding.jpg";
+        soundFile="amireftekhar.wav";
+
+
+
         setImage(portraitFile);
         sitting=true;
     }
     
      /**
-     * Act - do whatever the JonathanSong actor wants to do. This method is called whenever
+     * Act - do whatever the KilgoreTrout actor wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */   
     public void act() 
@@ -67,7 +74,11 @@ public class JonathanSong extends Student implements SpecialInterestOrHobby
                 getName();
                 sayName(soundFile);
             
-                myHobby("I like to play Basketball!");
+
+                myHobby("I like to play sports with friends");
+
+                
+
             // Create a "special method for your class and put the call here.  You can twirl your image, resize it, move it around, change transparancy, or a 
             // combination of all of those types of actions, or more. Make sure to save the original image if you manipulate it, so that you can put it back.
             // Call the sitDown() method to move back  to your seat
@@ -94,34 +105,46 @@ public class JonathanSong extends Student implements SpecialInterestOrHobby
 
    
     /**
-     * This is a local method specific to the JonathanSong class used to animate the character once the image is clicked on.
+     * This is a local method specific to the KilgoreTrout class used to animate the character once the image is clicked on.
      * You should write your own methods to perform your own animation for your character/avatar.
      */
-    public void circleClass(){
-        setLocation(8,7);
-         Greenfoot.delay(10);
-        // move right
-        for (int i=1;i<=9;i++){
-            setLocation(i,0);
-            Greenfoot.delay(10);
+
+    public void circleClass() {
+        int originalX = getX();
+        int originalY = getY();
+        GreenfootImage originalImage = getImage();
+        
+        // Move in a spiral
+        for (int i = 0; i < 360; i += 5) {
+            int x = getWorld().getWidth() / 2 + (int) (i / 5 * Math.cos(Math.toRadians(i)));
+            int y = getWorld().getHeight() / 2 + (int) (i / 5 * Math.sin(Math.toRadians(i)));
+            setLocation(x, y);
+            turn(5);  // Spin while moving
+            Greenfoot.delay(1);
         }
-        // move back
-        for (int i=1;i<=5;i++){
-            setLocation(9,i);
-            Greenfoot.delay(10);
-        }      
-         // move left
-        for (int i=9;i>=0;i--){
-            setLocation(i,5);
-            Greenfoot.delay(10);
-        }      
-              // move Forward
-        for (int i=5;i>=0;i--){
-            setLocation(0,i);
-            Greenfoot.delay(10);
-        }   
-           Greenfoot.delay(20);
-           returnToSeat();
+        
+        // Expand and contract
+        for (int i = 100; i <= 200; i += 5) {
+            setImage(new GreenfootImage(originalImage));
+            getImage().scale(i, i);
+            Greenfoot.delay(1);
+        }
+        for (int i = 200; i >= 100; i -= 5) {
+            setImage(new GreenfootImage(originalImage));
+            getImage().scale(i, i);
+            Greenfoot.delay(1);
+        }
+        
+        // Spin in place
+        for (int i = 0; i < 360; i += 10) {
+            turn(10);
+            Greenfoot.delay(1);
+        }
+        
+        // Return to original position and image
+        setLocation(originalX, originalY);
+        setImage(originalImage);
+        setRotation(0);
     }
      /**
      * myHobby is one of the interfaces provided.  

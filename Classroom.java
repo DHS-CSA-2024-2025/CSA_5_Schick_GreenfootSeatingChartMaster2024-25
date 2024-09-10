@@ -219,8 +219,8 @@ public class Classroom extends World
         
         VemuriSiddharth SiddharthVemuri = new VemuriSiddharth();
         addObject(SiddharthVemuri,8,6);
-        SiddharthVemuri.assignSeat();
-  
+        SiddharthVemuri.assignSeat();  
+
     }
     
     public List<Student> getAllStudents(){
