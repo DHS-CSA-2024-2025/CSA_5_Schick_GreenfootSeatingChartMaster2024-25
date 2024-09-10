@@ -210,6 +210,11 @@ public class Classroom extends World
         JonathanSong jonathansong = new JonathanSong();
         addObject(jonathansong,8,7);
         jonathansong.assignSeat();
+        
+        VemuriSiddharth SiddharthVemuri = new VemuriSiddharth();
+        addObject(SiddharthVemuri,8,6);
+        SiddharthVemuri.assignSeat();
+    
 
     }
     
