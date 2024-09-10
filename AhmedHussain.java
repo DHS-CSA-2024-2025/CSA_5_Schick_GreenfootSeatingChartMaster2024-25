@@ -1,5 +1,8 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
+
+ 
+
 /**
  * The KilgoreTrout class can be used as a model for your own class that represents you and your seating location in AP CSA
  * 
@@ -22,6 +25,9 @@ public class AhmedHussain extends Student implements SpecialInterestOrHobby
      * @param int s (seat number within row seating arrangement)
      * 
      */
+    public String file1="ahmed4.png";
+    public String file2="ahmed5.png";
+    public String file3="ahmed6.png";
     public AhmedHussain(String f, String l, int r, int s) {
         firstName=f;
         lastName=l;
@@ -30,6 +36,7 @@ public class AhmedHussain extends Student implements SpecialInterestOrHobby
         portraitFile=f.toLowerCase()+l.toLowerCase()+".jpg";    // Make sure to name your image files firstlast.jpg, all lowercase!!!
         standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
         soundFile=f.toLowerCase()+l.toLowerCase()+".wav";  // Make sure to name your sound files firstlast.wav, all lowercase!!!
+        
         setImage(portraitFile);
         sitting=true;
     }
@@ -39,14 +46,15 @@ public class AhmedHussain extends Student implements SpecialInterestOrHobby
      * of the classroom.
      */
     public AhmedHussain() {
-        firstName="Kilgore";
-        lastName="Trout";
+        firstName="Ahmed";
+        lastName="Hussain";
         mySeatX=1;
         mySeatY=1;
        // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
-       portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
-       standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
-        soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
+       portraitFile="ahmed1.jpg";
+       standingFile="ahmed2.png";
+       
+        soundFile="ahmed3.wav";
         setImage(portraitFile);
         sitting=true;
     }
@@ -66,7 +74,7 @@ public class AhmedHussain extends Student implements SpecialInterestOrHobby
                 getName();
                 sayName(soundFile);
             
-                myHobby("I like to time travel!");
+                myHobby("I like to code.");
             // Create a "special method for your class and put the call here.  You can twirl your image, resize it, move it around, change transparancy, or a 
             // combination of all of those types of actions, or more. Make sure to save the original image if you manipulate it, so that you can put it back.
             // Call the sitDown() method to move back  to your seat
@@ -97,23 +105,26 @@ public class AhmedHussain extends Student implements SpecialInterestOrHobby
      * You should write your own methods to perform your own animation for your character/avatar.
      */
     public void circleClass(){
-        setLocation(0,0);
+        setLocation(3,1);
          Greenfoot.delay(10);
         // move right
         for (int i=1;i<=9;i++){
             setLocation(i,0);
             Greenfoot.delay(10);
         }
+        setImage(file1);
         // move back
         for (int i=1;i<=5;i++){
             setLocation(9,i);
             Greenfoot.delay(10);
-        }      
+        }     
+        setImage(file2);
          // move left
         for (int i=9;i>=0;i--){
             setLocation(i,5);
             Greenfoot.delay(10);
-        }      
+        } 
+        setImage(file3);
               // move Forward
         for (int i=5;i>=0;i--){
             setLocation(0,i);

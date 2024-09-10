@@ -32,9 +32,7 @@ public class AmirEftekhar extends Student implements SpecialInterestOrHobby
        standingFile="amireftekharstanding.jpg";
         soundFile="amireftekhar.wav";
 
-        portraitFile="kilgoretrout.jpg";
-       standingFile="kilgoretrout-standing.jpg";
-        soundFile="kilgoretrout.wav";
+
 
         setImage(portraitFile);
         sitting=true;
@@ -55,9 +53,7 @@ public class AmirEftekhar extends Student implements SpecialInterestOrHobby
       standingFile="amireftekharstanding.jpg";
         soundFile="amireftekhar.wav";
 
-       portraitFile="kilgoretrout.jpg";
-       standingFile="kilgoretrout-standing.jpg";
-        soundFile="kilgoretrout.wav";
+
 
         setImage(portraitFile);
         sitting=true;
@@ -149,33 +145,6 @@ public class AmirEftekhar extends Student implements SpecialInterestOrHobby
         setLocation(originalX, originalY);
         setImage(originalImage);
         setRotation(0);
-
-    public void circleClass(){
-        setLocation(0,0);
-         Greenfoot.delay(10);
-        // move right
-        for (int i=1;i<=9;i++){
-            setLocation(i,0);
-            Greenfoot.delay(10);
-        }
-        // move back
-        for (int i=1;i<=5;i++){
-            setLocation(9,i);
-            Greenfoot.delay(10);
-        }      
-         // move left
-        for (int i=9;i>=0;i--){
-            setLocation(i,5);
-            Greenfoot.delay(10);
-        }      
-              // move Forward
-        for (int i=5;i>=0;i--){
-            setLocation(0,i);
-            Greenfoot.delay(10);
-        }   
-           Greenfoot.delay(20);
-           returnToSeat();
-
     }
      /**
      * myHobby is one of the interfaces provided.  
