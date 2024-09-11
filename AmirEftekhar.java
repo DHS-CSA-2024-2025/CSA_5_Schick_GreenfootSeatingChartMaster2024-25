@@ -109,20 +109,21 @@ public class AmirEftekhar extends Student implements SpecialInterestOrHobby
      * You should write your own methods to perform your own animation for your character/avatar.
      */
 
-    public void circleClass() {
+
+public void circleClass() {
         int originalX = getX();
         int originalY = getY();
         GreenfootImage originalImage = getImage();
-        
+
         // Move in a spiral
-        for (int i = 0; i < 360; i += 5) {
+        for (int i = 0; i < 360; i += 1) {
             int x = getWorld().getWidth() / 2 + (int) (i / 5 * Math.cos(Math.toRadians(i)));
             int y = getWorld().getHeight() / 2 + (int) (i / 5 * Math.sin(Math.toRadians(i)));
             setLocation(x, y);
-            turn(5);  // Spin while moving
+            turn(5);  // Spin while moving 
             Greenfoot.delay(1);
         }
-        
+
         // Expand and contract
         for (int i = 100; i <= 200; i += 5) {
             setImage(new GreenfootImage(originalImage));
@@ -134,18 +135,20 @@ public class AmirEftekhar extends Student implements SpecialInterestOrHobby
             getImage().scale(i, i);
             Greenfoot.delay(1);
         }
-        
+
         // Spin in place
         for (int i = 0; i < 360; i += 10) {
             turn(10);
             Greenfoot.delay(1);
         }
-        
+
         // Return to original position and image
         setLocation(originalX, originalY);
         setImage(originalImage);
         setRotation(0);
     }
+
+
      /**
      * myHobby is one of the interfaces provided.  
      * An interface is just a contract for the methods that you will implement in your code.  The College Board no longer
@@ -154,5 +157,6 @@ public class AmirEftekhar extends Student implements SpecialInterestOrHobby
      public void myHobby(String s) {
          System.out.println(s);
 }
+
 
 }
