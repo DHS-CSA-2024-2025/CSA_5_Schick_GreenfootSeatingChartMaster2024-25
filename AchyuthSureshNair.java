@@ -39,8 +39,8 @@ public class AchyuthSureshNair extends Student implements SpecialInterestOrHobby
      * of the classroom.
      */
     public AchyuthSureshNair() {
-        firstName="Kilgore";
-        lastName="Trout";
+        firstName="Achyuth";
+        lastName="SureshNair";
         mySeatX=1;
         mySeatY=1;
        // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
@@ -66,13 +66,10 @@ public class AchyuthSureshNair extends Student implements SpecialInterestOrHobby
                 getName();
                 sayName(soundFile);
             
-                myHobby("I like to time travel!");
-            // Create a "special method for your class and put the call here.  You can twirl your image, resize it, move it around, change transparancy, or a 
-            // combination of all of those types of actions, or more. Make sure to save the original image if you manipulate it, so that you can put it back.
-            // Call the sitDown() method to move back  to your seat
-            
-                circleClass();  // Kilgore Trount's special method... Please write one of your own. You can use this, but please modify it and be creative.
-           
+                myHobby("I like to ride my bike!");
+                
+                randomLocation();
+                
                 sitDown();
             }
         
@@ -84,45 +81,20 @@ public class AchyuthSureshNair extends Student implements SpecialInterestOrHobby
     public void getName(){
         System.out.println("My name is " + firstName + " " + lastName);
     }
-    /**
-     * This method needs to allow the user to interact with the student through a question and answer interface, and provide
-     * some mechanism that allows the student to sit down once the Q&A session ends.  You can use this basic model, or come up
-     * with some additional class and object that represents a blackboard, or a talking cartoon bubble etc. If you provide extra
-     * classes, make sure to fully document so other students can use the same interface.
-     */
 
-   
     /**
-     * This is a local method specific to the AchyuthSureshNair class used to animate the character once the image is clicked on.
-     * You should write your own methods to perform your own animation for your character/avatar.
+     * Chooses a random location 8 times and moves .standing file to that location
      */
-    public void circleClass(){
-        setLocation(0,0);
-         Greenfoot.delay(10);
-        // move right
-        for (int i=1;i<=9;i++){
-            setLocation(i,0);
-            Greenfoot.delay(10);
+    public void randomLocation() {
+        for (int i = 0; i < 8; i++) {
+            int randomX = Greenfoot.getRandomNumber(getWorld().getWidth());
+            int randomY = Greenfoot.getRandomNumber(getWorld().getHeight());
+            setLocation(randomX, randomY);
+            Greenfoot.delay(60);  // 1 second increments
         }
-        // move back
-        for (int i=1;i<=5;i++){
-            setLocation(9,i);
-            Greenfoot.delay(10);
-        }      
-         // move left
-        for (int i=9;i>=0;i--){
-            setLocation(i,5);
-            Greenfoot.delay(10);
-        }      
-              // move Forward
-        for (int i=5;i>=0;i--){
-            setLocation(0,i);
-            Greenfoot.delay(10);
-        }   
-           Greenfoot.delay(20);
-           returnToSeat();
     }
-     /**
+
+    /**
      * myHobby is one of the interfaces provided.  
      * An interface is just a contract for the methods that you will implement in your code.  The College Board no longer
      * tests on abstract classes and interfaces, but it is good to know about them

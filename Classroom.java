@@ -152,11 +152,19 @@ public class Classroom extends World
         KilgoreTrout kilgoretrout = new KilgoreTrout();
         addObject(kilgoretrout,2,3);
         kilgoretrout.assignSeat();
-        
+     
+        AhmedHussain ahmed = new AhmedHussain();
+        addObject(ahmed,3,3);
+        ahmed.assignSeat();
+     
+        AchyuthSureshNair achyuthsureshnair = new AchyuthSureshNair();
+        addObject(achyuthsureshnair,9,7);
+        achyuthsureshnair.assignSeat();
 
         AmirEftekhar Amir = new AmirEftekhar();
-        addObject(Amir,1,2);
+        addObject(Amir,2,4);
         Amir.assignSeat();
+        
         ChengKevin chengkevin = new ChengKevin();
         addObject(chengkevin,3,6);
         chengkevin.assignSeat();
@@ -173,6 +181,9 @@ public class Classroom extends World
         addObject(mingyukang,5,4);
         mingyukang.assignSeat();
         
+        AnirudhMuralidharan anirudhmuralidharan = new AnirudhMuralidharan();
+        addObject(anirudhmuralidharan, 6, 9);
+        anirudhmuralidharan.assignSeat();
 
         PragyaRanjan pragyaranjan = new PragyaRanjan();
         addObject(pragyaranjan,9,10);
@@ -191,7 +202,6 @@ public class Classroom extends World
         addObject(sanathvenkatachalam,8,4);
         sanathvenkatachalam.assignSeat();
 
-  
         AlanWan alanwan = new AlanWan();
         addObject(alanwan,9,3);
         alanwan.assignSeat();
@@ -211,6 +221,18 @@ public class Classroom extends World
         JonathanSong jonathansong = new JonathanSong();
         addObject(jonathansong,8,7);
         jonathansong.assignSeat();
+        
+        VemuriSiddharth SiddharthVemuri = new VemuriSiddharth();
+        addObject(SiddharthVemuri,8,6);
+        SiddharthVemuri.assignSeat();
+        
+        HussainKazi HussainKazi = new HussainKazi();
+        addObject(HussainKazi,6,6);
+        HussainKazi.assignSeat();
+        
+        AavhaanNema aavhaannema = new AavhaanNema();
+        addObject(aavhaannema,5,10);
+        aavhaannema.assignSeat();
     }
     
     public List<Student> getAllStudents(){
