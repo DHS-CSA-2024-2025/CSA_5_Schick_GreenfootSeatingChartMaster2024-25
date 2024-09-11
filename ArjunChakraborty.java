@@ -39,10 +39,10 @@ public class ArjunChakraborty extends Student implements SpecialInterestOrHobby
      * of the classroom.
      */
     public ArjunChakraborty() {
-        firstName="Kilgore";
-        lastName="Trout";
-        mySeatX=1;
-        mySeatY=1;
+        firstName="Arjun";
+        lastName="Chakraborty";
+        mySeatX=3;
+        mySeatY=7;
        // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
@@ -106,7 +106,7 @@ public class ArjunChakraborty extends Student implements SpecialInterestOrHobby
         }
         // move back
         for (int i=1;i<=5;i++){
-            setLocation(9,i);
+            setLocation(i,9);
             Greenfoot.delay(10);
         }      
          // move left
@@ -116,7 +116,7 @@ public class ArjunChakraborty extends Student implements SpecialInterestOrHobby
         }      
               // move Forward
         for (int i=5;i>=0;i--){
-            setLocation(0,i);
+            setLocation(i,0);
             Greenfoot.delay(10);
         }   
            Greenfoot.delay(20);
