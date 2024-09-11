@@ -225,6 +225,10 @@ public class Classroom extends World
         HussainKazi HussainKazi = new HussainKazi();
         addObject(HussainKazi,6,6);
         HussainKazi.assignSeat();
+        
+        AavhaanNema aavhaannema = new AavhaanNema();
+        addObject(aavhaannema,5,10);
+        aavhaannema.assignSeat();
     }
     
     public List<Student> getAllStudents(){
