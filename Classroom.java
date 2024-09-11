@@ -161,9 +161,10 @@ public class Classroom extends World
         addObject(achyuthsureshnair,9,7);
         achyuthsureshnair.assignSeat();
 
-        AmirEftekhar Amir = new AmirEftekhar();
-        addObject(Amir,1,2);
+       AmirEftekhar Amir = new AmirEftekhar();
+        addObject(Amir,2,4);
         Amir.assignSeat();
+        
         ChengKevin chengkevin = new ChengKevin();
         addObject(chengkevin,3,6);
         chengkevin.assignSeat();
