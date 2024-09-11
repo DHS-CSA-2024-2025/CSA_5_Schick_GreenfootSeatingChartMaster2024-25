@@ -41,8 +41,8 @@ public class AnirudhMuralidharan extends Student implements SpecialInterestOrHob
     public AnirudhMuralidharan() {
         firstName="Anirudh";
         lastName="Muralidharan";
-        mySeatX=1;
-        mySeatY=1;
+        mySeatX=6;
+        mySeatY=9;
        // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
@@ -66,7 +66,7 @@ public class AnirudhMuralidharan extends Student implements SpecialInterestOrHob
                 getName();
                 sayName(soundFile);
             
-                myHobby("I like to time travel!");
+                myHobby("I like to play table tennis");
             // Create a "special method for your class and put the call here.  You can twirl your image, resize it, move it around, change transparancy, or a 
             // combination of all of those types of actions, or more. Make sure to save the original image if you manipulate it, so that you can put it back.
             // Call the sitDown() method to move back  to your seat
