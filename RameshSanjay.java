@@ -28,7 +28,7 @@ public class RameshSanjay extends Student implements SpecialInterestOrHobby
         mySeatX=r;
         mySeatY=s;
         portraitFile=f.toLowerCase()+l.toLowerCase()+".jpg";    // Make sure to name your image files firstlast.jpg, all lowercase!!!
-        standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
+        standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
         soundFile=f.toLowerCase()+l.toLowerCase()+".wav";  // Make sure to name your sound files firstlast.wav, all lowercase!!!
         setImage(portraitFile);
         sitting=true;
@@ -64,7 +64,7 @@ public class RameshSanjay extends Student implements SpecialInterestOrHobby
                 setImage(standingFile);
                 System.out.println(""); // Print a blank line to create space between any student output.
                 getName();
-                sayName(soundFile);
+                sayName("rameshsanjay.mp3");
             
                 myHobby("I like to do jumping jacks!");
             // Create a "special method for your class and put the call here.  You can twirl your image, resize it, move it around, change transparancy, or a 
