@@ -233,6 +233,12 @@ public class Classroom extends World
         AavhaanNema aavhaannema = new AavhaanNema();
         addObject(aavhaannema,5,10);
         aavhaannema.assignSeat();
+        
+        RaghuVoleti raghuvoleti = new RaghuVoleti();
+        addObject(raghuvoleti,9,4);
+        raghuvoleti.assignSeat();
+        
+  
     }
     
     public List<Student> getAllStudents(){
