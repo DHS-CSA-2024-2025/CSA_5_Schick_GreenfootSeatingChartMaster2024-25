@@ -97,28 +97,39 @@ public class MichaelOliveira extends Student implements SpecialInterestOrHobby
      * You should write your own methods to perform your own animation for your character/avatar.
      */
     public void circleClass(){
-        setLocation(0,0);
+        setLocation(7,3);
          Greenfoot.delay(10);
-        // move right
-        for (int i=1;i<=9;i++){
-            setLocation(i,0);
+        // move down
+        for (int i=3;i<=8;i++){
+            setLocation(7,i);
             Greenfoot.delay(10);
         }
-        // move back
-        for (int i=1;i<=5;i++){
-            setLocation(9,i);
+        setRotation(30);
+        // move left
+        for (int i=7;i>=1;i--){
+            setLocation(i,8);
             Greenfoot.delay(10);
         }      
-         // move left
-        for (int i=9;i>=0;i--){
-            setLocation(i,1);
+        setRotation(-30);
+
+        // move up
+        for (int i=8;i>=2;i--){
+            setLocation(1,i);
             Greenfoot.delay(10);
-        }      
-              // move Forward
-        for (int i=1;i>=0;i--){
-            setLocation(0,i);
+        }
+        setRotation(30);
+        // move right
+        for (int i=1;i<=7;i++){
+            setLocation(i,2);
             Greenfoot.delay(10);
-        }   
+        }
+        setRotation(-30);
+        // move down
+        for (int i=2;i<=3;i++){
+            setLocation(7,i);
+            Greenfoot.delay(10);
+        }
+        setRotation(0);
            Greenfoot.delay(20);
            returnToSeat();
     }

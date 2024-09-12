@@ -152,8 +152,32 @@ public class Classroom extends World
         KilgoreTrout kilgoretrout = new KilgoreTrout();
         addObject(kilgoretrout,2,3);
         kilgoretrout.assignSeat();
+     
+        AhmedHussain ahmed = new AhmedHussain();
+        addObject(ahmed,3,3);
+        ahmed.assignSeat();
+     
+        AchyuthSureshNair achyuthsureshnair = new AchyuthSureshNair();
+        addObject(achyuthsureshnair,9,7);
+        achyuthsureshnair.assignSeat();
+
+       AmirEftekhar Amir = new AmirEftekhar();
+        addObject(Amir,2,4);
+        Amir.assignSeat();
         
-          MingyuKang mingyukang = new MingyuKang();
+        ChengKevin chengkevin = new ChengKevin();
+        addObject(chengkevin,3,6);
+        chengkevin.assignSeat();
+
+        ArnavShah arnavshah = new ArnavShah();
+        addObject(arnavshah,9,9);
+        arnavshah.assignSeat();
+       
+        MichaelOliveira michaeloliveira = new MichaelOliveira();
+        addObject(michaeloliveira,8,3);
+        michaeloliveira.assignSeat();
+     
+        MingyuKang mingyukang = new MingyuKang();
         addObject(mingyukang,5,4);
         mingyukang.assignSeat();
   
