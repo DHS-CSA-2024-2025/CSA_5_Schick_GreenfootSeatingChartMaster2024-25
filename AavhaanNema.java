@@ -27,9 +27,9 @@ public class AavhaanNema extends Student implements SpecialInterestOrHobby
         lastName=l;
         mySeatX=r;
         mySeatY=s;
-        portraitFile=f.toLowerCase()+l.toLowerCase()+".jpg";    // Make sure to name your image files firstlast.jpg, all lowercase!!!
-        standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
-        soundFile=f.toLowerCase()+l.toLowerCase()+".wav";  // Make sure to name your sound files firstlast.wav, all lowercase!!!
+        portraitFile="aavhaannema.jpg";    // Make sure to name your image files firstlast.jpg, all lowercase!!!
+        standingFile="aavhaannema-standing.jpeg";
+        soundFile=f+l+".wav";  // Make sure to name your sound files firstlast.wav, all lowercase!!!
         setImage(portraitFile);
         sitting=true;
     }
@@ -41,12 +41,12 @@ public class AavhaanNema extends Student implements SpecialInterestOrHobby
     public AavhaanNema() {
         firstName="Aavhaan";
         lastName="Nema";
-        mySeatX=1;
-        mySeatY=1;
-       // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
-       portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
-       standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
-        soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
+        mySeatX=5;
+        mySeatY=10;
+        //imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
+       portraitFile="aavhaannema.jpg";
+       standingFile="aavhaannema-standing.jpeg";
+        soundFile=firstName.toLowerCase()+ lastName.toLowerCase() +".wav";
         setImage(portraitFile);
         sitting=true;
     }
@@ -59,14 +59,14 @@ public class AavhaanNema extends Student implements SpecialInterestOrHobby
     {
         // Add your action code here.
         if(Greenfoot.mouseClicked(this)){
-          //  if (sitting){
-                sitting=false;
-                setImage(standingFile);
+          /*  if (sitting){
+                sitting=false; */
+                setImage("aavhaannema-standing.jpeg");
                 System.out.println(""); // Print a blank line to create space between any student output.
                 getName();
-                sayName(soundFile);
+                sayName("avaneeshnagarur.wav");
             
-                myHobby("I like to time travel!");
+                myHobby("I like to play chess");
             // Create a "special method for your class and put the call here.  You can twirl your image, resize it, move it around, change transparancy, or a 
             // combination of all of those types of actions, or more. Make sure to save the original image if you manipulate it, so that you can put it back.
             // Call the sitDown() method to move back  to your seat

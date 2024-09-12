@@ -11,7 +11,7 @@ public class TonyNguyen extends Student implements SpecialInterestOrHobby
 {
 
     /**
-     * Constructor for the KilgoreTrout class.
+     * Constructor for the TonyNguyen class.
      * Constructors are special methods with the same exact name as the class name.  
      * Constructors to not have return types.
      * Constructors can be overloaded. This means we can call a constructor with different sets of parameter
@@ -41,10 +41,10 @@ public class TonyNguyen extends Student implements SpecialInterestOrHobby
     public TonyNguyen() {
         firstName="Tony";
         lastName="Nguyen";
-        mySeatX=1;
-        mySeatY=1;
+        mySeatX=6;
+        mySeatY=10;
        // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
-       portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
+       portraitFile= firstName.toLowerCase() + lastName.toLowerCase() +".jpg";
        standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
         soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
         setImage(portraitFile);
@@ -52,7 +52,7 @@ public class TonyNguyen extends Student implements SpecialInterestOrHobby
     }
     
      /**
-     * Act - do whatever the KilgoreTrout actor wants to do. This method is called whenever
+     * Act - do whatever the actor wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */   
     public void act() 
@@ -66,7 +66,7 @@ public class TonyNguyen extends Student implements SpecialInterestOrHobby
                 getName();
                 sayName(soundFile);
             
-                myHobby("I like to time travel!");
+                myHobby("I like to play pool!");
             // Create a "special method for your class and put the call here.  You can twirl your image, resize it, move it around, change transparancy, or a 
             // combination of all of those types of actions, or more. Make sure to save the original image if you manipulate it, so that you can put it back.
             // Call the sitDown() method to move back  to your seat
@@ -97,30 +97,45 @@ public class TonyNguyen extends Student implements SpecialInterestOrHobby
      * You should write your own methods to perform your own animation for your character/avatar.
      */
     public void circleClass(){
-        setLocation(0,0);
-         Greenfoot.delay(10);
-        // move right
-        for (int i=1;i<=9;i++){
-            setLocation(i,0);
-            Greenfoot.delay(10);
-        }
-        // move back
-        for (int i=1;i<=5;i++){
-            setLocation(9,i);
-            Greenfoot.delay(10);
-        }      
-         // move left
-        for (int i=9;i>=0;i--){
-            setLocation(i,5);
-            Greenfoot.delay(10);
-        }      
-              // move Forward
-        for (int i=5;i>=0;i--){
-            setLocation(0,i);
-            Greenfoot.delay(10);
-        }   
-           Greenfoot.delay(20);
-           returnToSeat();
+        setLocation(6,10);
+         Greenfoot.delay(5);
+         
+       for (int iter=0; iter<=5;iter++){
+            // move right
+           for (int steps=0;steps<=9;steps++){
+                setLocation(steps,12);
+                Greenfoot.delay(5);
+            }
+        
+            // move up on the right
+            for (int y = 0;y<=14;y++){
+                setLocation(12,y);
+                Greenfoot.delay(3);
+            }
+            
+            // move down
+            for (int y = 12;y<=0;y--){
+                setLocation(10,y);
+                Greenfoot.delay(3);
+            }
+             // move left
+            for (int i=10;i<=1;i--){
+                setLocation(i,12);
+                Greenfoot.delay(3);
+            }      
+            
+            // move up on the left
+            for (int y = 0;y<=12;y++){
+                setLocation(1,y);
+                Greenfoot.delay(3);
+            }
+            
+               Greenfoot.delay(2);
+               returnToSeat();
+            }
+    
+           
+           
     }
      /**
      * myHobby is one of the interfaces provided.  

@@ -27,8 +27,8 @@ public class KavalRuhi extends Student implements SpecialInterestOrHobby
         lastName=l;
         mySeatX=r;
         mySeatY=s;
-        portraitFile=f.toLowerCase()+l.toLowerCase()+".jpg";    // Make sure to name your image files firstlast.jpg, all lowercase!!!
-        standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
+        portraitFile=f.toLowerCase()+l.toLowerCase()+".png";    // Make sure to name your image files firstlast.jpg, all lowercase!!!
+        standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+".png";
         soundFile=f.toLowerCase()+l.toLowerCase()+".wav";  // Make sure to name your sound files firstlast.wav, all lowercase!!!
         setImage(portraitFile);
         sitting=true;
@@ -39,14 +39,14 @@ public class KavalRuhi extends Student implements SpecialInterestOrHobby
      * of the classroom.
      */
     public KavalRuhi() {
-        firstName="Kilgore";
-        lastName="Trout";
-        mySeatX=1;
-        mySeatY=1;
-       // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
-       portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
-       standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
-        soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
+        firstName="Ruhi";
+        lastName="Kaval";
+        mySeatX=6;
+        mySeatY=4;
+       //imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
+       portraitFile="ruhikaval.png";
+       standingFile="ruhikaval.png";
+       soundFile="ruhikaval.wav";
         setImage(portraitFile);
         sitting=true;
     }
@@ -66,7 +66,7 @@ public class KavalRuhi extends Student implements SpecialInterestOrHobby
                 getName();
                 sayName(soundFile);
             
-                myHobby("I like to time travel!");
+                myHobby("I like to play guitar!");
             // Create a "special method for your class and put the call here.  You can twirl your image, resize it, move it around, change transparancy, or a 
             // combination of all of those types of actions, or more. Make sure to save the original image if you manipulate it, so that you can put it back.
             // Call the sitDown() method to move back  to your seat
@@ -100,22 +100,22 @@ public class KavalRuhi extends Student implements SpecialInterestOrHobby
         setLocation(0,0);
          Greenfoot.delay(10);
         // move right
-        for (int i=1;i<=9;i++){
+        for (int i=1;i<=5;i++){
             setLocation(i,0);
             Greenfoot.delay(10);
         }
         // move back
-        for (int i=1;i<=5;i++){
+        for (int i=2;i<=4;i++){
             setLocation(9,i);
             Greenfoot.delay(10);
         }      
          // move left
-        for (int i=9;i>=0;i--){
+        for (int i=5;i>=9;i--){
             setLocation(i,5);
             Greenfoot.delay(10);
         }      
               // move Forward
-        for (int i=5;i>=0;i--){
+        for (int i=3;i>=0;i--){
             setLocation(0,i);
             Greenfoot.delay(10);
         }   
