@@ -30,11 +30,9 @@ public class AmirEftekhar extends Student implements SpecialInterestOrHobby
 
         portraitFile="amireftekhar.png";
        standingFile="amireftekharstanding.jpg";
-        soundFile="amireftekhar.wav";
+        soundFile="amirsound.wav";
 
-        portraitFile="kilgoretrout.jpg";
-       standingFile="kilgoretrout-standing.jpg";
-        soundFile="kilgoretrout.wav";
+
 
         setImage(portraitFile);
         sitting=true;
@@ -53,11 +51,9 @@ public class AmirEftekhar extends Student implements SpecialInterestOrHobby
 
        portraitFile="amireftekhar.png";
       standingFile="amireftekharstanding.jpg";
-        soundFile="amireftekhar.wav";
+        soundFile="amirsound.wav";
 
-       portraitFile="kilgoretrout.jpg";
-       standingFile="kilgoretrout-standing.jpg";
-        soundFile="kilgoretrout.wav";
+
 
         setImage(portraitFile);
         sitting=true;
@@ -113,20 +109,21 @@ public class AmirEftekhar extends Student implements SpecialInterestOrHobby
      * You should write your own methods to perform your own animation for your character/avatar.
      */
 
-    public void circleClass() {
+
+public void circleClass() {
         int originalX = getX();
         int originalY = getY();
         GreenfootImage originalImage = getImage();
-        
+
         // Move in a spiral
-        for (int i = 0; i < 360; i += 5) {
+        for (int i = 0; i < 360; i += 1) {
             int x = getWorld().getWidth() / 2 + (int) (i / 5 * Math.cos(Math.toRadians(i)));
             int y = getWorld().getHeight() / 2 + (int) (i / 5 * Math.sin(Math.toRadians(i)));
             setLocation(x, y);
-            turn(5);  // Spin while moving
+            turn(5);  // Spin while moving 
             Greenfoot.delay(1);
         }
-        
+
         // Expand and contract
         for (int i = 100; i <= 200; i += 5) {
             setImage(new GreenfootImage(originalImage));
@@ -138,45 +135,20 @@ public class AmirEftekhar extends Student implements SpecialInterestOrHobby
             getImage().scale(i, i);
             Greenfoot.delay(1);
         }
-        
+
         // Spin in place
         for (int i = 0; i < 360; i += 10) {
             turn(10);
             Greenfoot.delay(1);
         }
-        
+
         // Return to original position and image
         setLocation(originalX, originalY);
         setImage(originalImage);
         setRotation(0);
-
-    public void circleClass(){
-        setLocation(0,0);
-         Greenfoot.delay(10);
-        // move right
-        for (int i=1;i<=9;i++){
-            setLocation(i,0);
-            Greenfoot.delay(10);
-        }
-        // move back
-        for (int i=1;i<=5;i++){
-            setLocation(9,i);
-            Greenfoot.delay(10);
-        }      
-         // move left
-        for (int i=9;i>=0;i--){
-            setLocation(i,5);
-            Greenfoot.delay(10);
-        }      
-              // move Forward
-        for (int i=5;i>=0;i--){
-            setLocation(0,i);
-            Greenfoot.delay(10);
-        }   
-           Greenfoot.delay(20);
-           returnToSeat();
-
     }
+
+
      /**
      * myHobby is one of the interfaces provided.  
      * An interface is just a contract for the methods that you will implement in your code.  The College Board no longer
@@ -185,5 +157,6 @@ public class AmirEftekhar extends Student implements SpecialInterestOrHobby
      public void myHobby(String s) {
          System.out.println(s);
 }
+
 
 }

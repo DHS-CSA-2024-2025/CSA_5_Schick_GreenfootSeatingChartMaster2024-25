@@ -29,7 +29,7 @@ public class NagarurAvaneesh extends Student implements SpecialInterestOrHobby
         mySeatY=s;
         portraitFile=f.toLowerCase()+l.toLowerCase()+".jpg";    // Make sure to name your image files firstlast.jpg, all lowercase!!!
         standingFile="avaneeshstand.jpeg";
-        soundFile=f.toLowerCase()+l.toLowerCase()+".m4a";  // Make sure to name your sound files firstlast.wav, all lowercase!!!
+        soundFile=f.toLowerCase()+l.toLowerCase()+".wav";  // Make sure to name your sound files firstlast.wav, all lowercase!!!
         setImage(portraitFile);
         sitting=true;
     }
@@ -46,7 +46,7 @@ public class NagarurAvaneesh extends Student implements SpecialInterestOrHobby
        // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        standingFile="avaneeshstand.jpeg";
-        soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".m4a";
+        soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
         setImage(portraitFile);
         sitting=true;
     }

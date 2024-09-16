@@ -185,9 +185,17 @@ public class Classroom extends World
         addObject(mingyukang,5,4);
         mingyukang.assignSeat();
         
-        SwaminathanSivakumar swaminathansivakumar = new SwaminathanSivakumar();
-        addObject(swaminathansivakumar,8,9);
-        swaminathansivakumar.assignSeat();
+        RameshSanjay rameshsanjay = new RameshSanjay();
+        addObject(rameshsanjay,8,10);
+        rameshsanjay.assignSeat();
+
+       AnirudhMuralidharan anirudhmuralidharan = new AnirudhMuralidharan();
+        addObject(anirudhmuralidharan, 6, 9);
+        anirudhmuralidharan.assignSeat();
+
+        PragyaRanjan pragyaranjan = new PragyaRanjan();
+        addObject(pragyaranjan,9,10);
+        pragyaranjan.assignSeat();
 
         NagarurAvaneesh nagaruravaneesh = new NagarurAvaneesh();
         addObject(nagaruravaneesh,5,9);
@@ -201,7 +209,7 @@ public class Classroom extends World
         SanathVenkatachalam sanathvenkatachalam = new SanathVenkatachalam();
         addObject(sanathvenkatachalam,8,4);
         sanathvenkatachalam.assignSeat();
-  
+        
         AlanWan alanwan = new AlanWan();
         addObject(alanwan,9,3);
         alanwan.assignSeat();
@@ -217,6 +225,28 @@ public class Classroom extends World
         JonathanSong jonathansong = new JonathanSong();
         addObject(jonathansong,8,7);
         jonathansong.assignSeat();
+        
+        VemuriSiddharth SiddharthVemuri = new VemuriSiddharth();
+        addObject(SiddharthVemuri,8,6);
+        SiddharthVemuri.assignSeat();
+        
+        HussainKazi HussainKazi = new HussainKazi();
+        addObject(HussainKazi,6,6);
+        HussainKazi.assignSeat();
+        
+        AavhaanNema aavhaannema = new AavhaanNema();
+        addObject(aavhaannema,5,10);
+        aavhaannema.assignSeat();
+        
+        RaghuVoleti raghuvoleti = new RaghuVoleti();
+        addObject(raghuvoleti,9,4);
+        raghuvoleti.assignSeat();
+        
+        SwaminathanSivakumar swaminathansivakumar = new SwaminathanSivakumar();
+        addObject(swaminathansivakumar,8,9);
+        swaminathansivakumar.assignSeat();
+        
+  
     }
     
     public List<Student> getAllStudents(){
