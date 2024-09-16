@@ -39,8 +39,8 @@ public class SwaminathanSivakumar extends Student implements SpecialInterestOrHo
      * of the classroom.
      */
     public SwaminathanSivakumar() {
-        firstName="Kilgore";
-        lastName="Trout";
+        firstName="swaminathan";
+        lastName="sivakumar";
         mySeatX=1;
         mySeatY=1;
        // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
