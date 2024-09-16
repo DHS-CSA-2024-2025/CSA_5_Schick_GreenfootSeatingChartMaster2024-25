@@ -234,9 +234,9 @@ public class Classroom extends World
         addObject(HussainKazi,6,6);
         HussainKazi.assignSeat();
         
-        AavhaanNema aavhaannema = new AavhaanNema();
+        /*AavhaanNema aavhaannema = new AavhaanNema();
         addObject(aavhaannema,5,10);
-        aavhaannema.assignSeat();
+        aavhaannema.assignSeat(); */
         
         RaghuVoleti raghuvoleti = new RaghuVoleti();
         addObject(raghuvoleti,9,4);
