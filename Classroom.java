@@ -245,6 +245,10 @@ public class Classroom extends World
         SwaminathanSivakumar swaminathansivakumar = new SwaminathanSivakumar();
         addObject(swaminathansivakumar,8,9);
         swaminathansivakumar.assignSeat();
+     
+        HaasiniMeesala haasinimeesala = new HaasiniMeesala();
+        addObject(haasinimeesala, 6, 7);
+        haasinimeesala.assignSeat();
         
   
     }
